@@ -1,0 +1,22 @@
+name: TimelapsePlugin
+version: 1.0-ALPHA
+main: com.localcc.timelapseplugin.TimelapsePlugin
+author: localcc
+commands:
+  starttimelapse:
+    description: Starts the timelapse recorder
+    usage: /starttimelapse
+    permission: timelapserecorder.starttimelapse
+    permission-message: Don't touch my recorder!
+  stoptimelapse:
+    description: Stops the timelapse recorder
+    usage: /stoptimelapse
+    permission: timelapserecorder.stoptimelapse
+    permission-message: Don't touch my recorder!
+permissions:
+  timelapserecorder.starttimelapse:
+    description: Permission to allow starting timelapse recording!
+    default: op
+  timelapserecorder.stoptimelapse:
+    description: Permission to allow stopping timelapse recording!
+    default: op
