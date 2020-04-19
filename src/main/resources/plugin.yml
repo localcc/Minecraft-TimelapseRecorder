@@ -13,10 +13,18 @@ commands:
     usage: /stoptimelapse
     permission: timelapserecorder.stoptimelapse
     permission-message: Don't touch my recorder!
+  isrecording:
+    description: Prints timelapse recorder status out
+    usage: /isrecording
+    permission: timelapserecorder.isrecordnig
+    permission-message: Don't touch my recorder!
 permissions:
   timelapserecorder.starttimelapse:
-    description: Permission to allow starting timelapse recording!
+    description: Permission to allow starting timelapse recording
     default: op
   timelapserecorder.stoptimelapse:
-    description: Permission to allow stopping timelapse recording!
+    description: Permission to allow stopping timelapse recording
+    default: op
+  timelapserecorder.isrecording:
+    description: Permission to allow checking timelapse recording status
     default: op
