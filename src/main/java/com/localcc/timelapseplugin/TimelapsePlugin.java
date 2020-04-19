@@ -7,6 +7,7 @@ public class TimelapsePlugin extends JavaPlugin {
     public void onEnable() {
         this.getCommand("starttimelapse").setExecutor(new CommandStartTimelapse());
         this.getCommand("stoptimelapse").setExecutor(new CommandStopTimelapse());
+        this.getCommand("isrecording").setExecutor(new CommandIsRecording());
         getServer().getPluginManager().registerEvents( new EventListener(), this);
         getLogger().info("Enabled timelapse plugin!");
 
